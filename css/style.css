@@ -10,11 +10,7 @@ body {
     transition: 0.3s;
   }
   
-  a:hover {
-    color: color-mix(in srgb, #cda45e, transparent 25%);
-    text-decoration: none;
-  }
-  
+   
   h1,
   h2,
   h3,
@@ -152,7 +148,6 @@ body {
     margin: 0;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: color-mix(in srgb, rgba(255, 255, 255, 0.7), transparent 30%);
     position: relative;
   }
   
@@ -197,7 +192,6 @@ body {
   
   .mymain:before {
     content: "";
-    background: color-mix(in srgb, white, transparent 50%);
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -219,7 +213,6 @@ body {
   }
   
   .mymain p {
-    color: color-mix(in srgb, black, transparent 20%);
     margin: 10px 0 0 0;
     font-size: 24px;
   }
