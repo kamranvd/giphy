@@ -52,4 +52,4 @@ async function fetchData() {
     };
 }
 
-loadDataoadData();
+loadData();
