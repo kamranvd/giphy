@@ -52,14 +52,4 @@ async function fetchData() {
     };
 }
 
-async function dataClicked(event) {
-    const id = event.target.dataset.id || event.target.parentElement.dataset.id;
-    if (typeof id === 'undefined') {
-        return;
-    } else {
-        loadData();
-    }
-}
-
-dataContainer.addEventListener('click', dataClicked);
-loadData();
+loadDataoadData();
