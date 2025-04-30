@@ -181,7 +181,7 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.mymain img {
+.mymain .hero-img {
   position: absolute;
   inset: 0;
   display: block;
