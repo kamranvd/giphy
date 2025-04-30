@@ -15,7 +15,7 @@ function renderData(data, wide=false) {
         <div 
             class="data-item ${wide===true ? 'wide' : ''}" 
             data-id="${data.id}">
-            <h2>${data.title}</h2>
+            <h2>${data.strTitle}</h2>
             <img 
                 src="${data.strDataImg}" 
                 alt="${data.strTitle}" />
@@ -42,7 +42,7 @@ async function fetchData() {
     data = (response.data || []).map(item => ({
         id: item.id ?? '',
         strTitle: item.title?.trim() || 'No Title',
-        strDataImg: item.images?.downsized_medium?.url || item.images?.downsized?.url || '', // Prefer higher quality if available
+        strDataImg: item.images?.fixed_height?.url || item.images?.fixed_height_downsampled?.url || '', // Prefer higher quality if available
         strDataDescription: item.slug?.replace(/-/g, ' ').trim() || 'No Description'
     }));
 
