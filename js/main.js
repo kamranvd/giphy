@@ -39,11 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <div 
                 class="data-item ${wide===true ? 'wide' : ''}" 
                 data-id="${data.id}">
-                <h2>${data.strTitle}</h2>
+                <h4 class="img-title">${data.strTitle}</h4>
                 <img 
                     src="${data.strDataImg}" 
                     alt="${data.strTitle}" />
-                <p>${data.strDataDescription}</p>
             </div>
         `;
     }
