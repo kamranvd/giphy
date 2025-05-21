@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   color: #ba3030;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 /*
@@ -163,6 +163,9 @@ h6 {
   color: white;
 }
 
+/*
+*  Section tags
+*/
 section,
 .section {
   color: rgba(255, 255, 255, 0.7);
