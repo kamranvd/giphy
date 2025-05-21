@@ -1,7 +1,11 @@
+/* Fonts */
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. */
+/* Smooth scroll */
 body {
-  color: rgba(255, 255, 255, 0.7);;
+  color: rgba(255, 255, 255, 0.7);
   background-color: #000000;
-  font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 a {
@@ -10,7 +14,6 @@ a {
   transition: 0.3s;
 }
 
-
 h1,
 h2,
 h3,
@@ -18,28 +21,27 @@ h4,
 h5,
 h6 {
   color: #ba3030;
-  font-family: "Playfair Display",  sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 /*
 *  Nav section
 *  Start
 */
-
 .navmenu {
   padding: 0%;
 }
 
 .navmenu ul {
   display: flex;
-  flex-direction: row; 
-  list-style: none; 
-  padding: 0;      
-  margin: 0;  
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navmenu ul li {
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 .navmenu ul li:last-child {
@@ -60,25 +62,27 @@ h6 {
 }
 
 .header .navbarcontainer {
-    background-color: #0c0b09;
-    min-height: 60px;
-    padding: 10px 0px;
-    transition: 0.3s;
-    border-bottom: 1px solid white;
+  background-color: #0c0b09;
+  min-height: 60px;
+  padding: 10px 0px;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
 }
 
 .d-flex {
-    display: flex !important;
+  display: flex !important;
 }
 
 .align-items-center {
-    align-items: center !important;
+  align-items: center !important;
 }
+
 .justify-content-between {
-    justify-content: space-between !important;
+  justify-content: space-between !important;
 }
+
 .position-relative {
-    position: relative !important;
+  position: relative !important;
 }
 
 .mymain .cta-btn {
@@ -95,27 +99,25 @@ h6 {
   flex-shrink: 0;
 }
 
-
 .mymain .cta-btn:first-child {
   margin-right: 10px;
 }
 
 .mymain {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97)),url('../img/mymain-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97)), url("../img/mymain-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
 }
 
-
 .content {
-  background-color: white; 
+  background-color: white;
   padding: 20px;
 }
 
 .dark-background {
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
 
@@ -129,13 +131,11 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 60px;
   }
 }
-
 .section-title {
   padding-bottom: 60px;
   position: relative;
@@ -166,9 +166,8 @@ section,
   margin: 0;
   font-size: 36px;
   font-weight: 600;
-  font-family: "Playfair Display",  sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
-
 
 .mymain {
   width: 100%;
@@ -187,7 +186,8 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 
@@ -224,10 +224,9 @@ section,
   Data Section
 
 */
-
 .data-item.wide, .data.wide {
-width: 50%;
-text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .data-container {
@@ -245,12 +244,24 @@ text-align: center;
   width: 300px; /* Control card size */
   max-width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .data-item img {
   width: auto; /* Images fill the card */
   height: auto;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
+
+.img-title {
+  text-align: center;
+  font-size: medium;
+  margin: 0 auto;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
