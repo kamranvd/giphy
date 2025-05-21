@@ -5,7 +5,7 @@
 body {
   color: rgba(255, 255, 255, 0.7);
   background-color: #000000;
-  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 a {
@@ -26,7 +26,7 @@ h6 {
 
 /*
 *  Nav section
-*  Start
+*  
 */
 .navmenu {
   padding: 0%;
@@ -48,6 +48,10 @@ h6 {
   margin-right: 0;
 }
 
+/*
+*  Header
+*  
+*/
 .header {
   color: white;
   text-transform: uppercase;
@@ -69,22 +73,10 @@ h6 {
   border-bottom: 1px solid white;
 }
 
-.d-flex {
-  display: flex !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
-.justify-content-between {
-  justify-content: space-between !important;
-}
-
-.position-relative {
-  position: relative !important;
-}
-
+/*
+*  Main tag
+*  
+*/
 .mymain .cta-btn {
   color: rgb(14, 12, 12);
   border: 2px solid green;
@@ -109,6 +101,56 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
+}
+
+.mymain {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mymain .hero-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.mymain:before {
+  content: "";
+  background: color-mix(in srgb, white, transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.mymain .container {
+  position: relative;
+  z-index: 3;
+}
+
+.mymain h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.mymain h2 span {
+  color: black;
+}
+
+.mymain p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
 }
 
 .content {
@@ -169,56 +211,6 @@ section,
   font-family: "Playfair Display", sans-serif;
 }
 
-.mymain {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.mymain .hero-img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
-}
-
-.mymain:before {
-  content: "";
-  background: color-mix(in srgb, white, transparent 50%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.mymain .container {
-  position: relative;
-  z-index: 3;
-}
-
-.mymain h2 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.mymain h2 span {
-  color: black;
-}
-
-.mymain p {
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-
 /*
 
   Data Section
@@ -264,4 +256,23 @@ section,
   font-size: medium;
   margin: 0 auto;
   width: 100%;
+}
+
+/*
+*  entire html
+*/
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.position-relative {
+  position: relative !important;
 }/*# sourceMappingURL=style.css.map */

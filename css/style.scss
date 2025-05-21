@@ -1,6 +1,6 @@
 /* Fonts */
 
-$default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $heading-font: "Playfair Display",  sans-serif;
 $nav-font: "Poppins",  sans-serif;
 
@@ -31,231 +31,228 @@ $contrast-color: #ffffff;
 $scroll-behavior: smooth;
 
 body {
-    color: rgba(255, 255, 255, 0.7);;
-    background-color: $background-color;
-    font-family: $default-font;
-  }
+  color: rgba(255, 255, 255, 0.7);;
+  background-color: $background-color;
+  font-family: $default-font;
+}
+
+a {
+  color: $accent-global-color;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ba3030;
+  font-family: $heading-font;
+}
+
+/*
+*  Nav section
+*  
+*/
+
+.navmenu {
+  padding: 0%;
+}
+
+.navmenu ul {
+  display: flex;
+  flex-direction: row; 
+  list-style: none; 
+  padding: 0;      
+  margin: 0;  
+}
+
+.navmenu ul li {
+  margin-right: 15px; 
+}
+
+.navmenu ul li:last-child {
+  margin-right: 0;
+}
   
-  a {
-    color: $accent-global-color;
-    text-decoration: none;
+/*
+*  Header
+*  
+*/
+
+.header {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header {
+  color: white;
+  background: $accent-global-color;
+}
+
+.header .navbarcontainer {
+    background-color: #0c0b09;
+    min-height: 60px;
+    padding: 10px 0px;
     transition: 0.3s;
-  }
+    border-bottom: 1px solid white;
+}
+
+/*
+*  Main tag
+*  
+*/
+
+.mymain .cta-btn {
+  color: rgb(14, 12, 12);
+  border: 2px solid green;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+
+.mymain .cta-btn:first-child {
+  margin-right: 10px;
+}
+
+.mymain {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97)),url('../img/mymain-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
   
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #ba3030;
-    font-family: $heading-font;
-  }
-  
-  /*
-  *  Nav section
-  *  Start
-  */
-  
-  .navmenu {
-    padding: 0%;
-  }
-  
-  .navmenu ul {
-    display: flex;
-    flex-direction: row; 
-    list-style: none; 
-    padding: 0;      
-    margin: 0;  
-  }
-  
-  .navmenu ul li {
-    margin-right: 15px; 
-  }
-  
-  .navmenu ul li:last-child {
-    margin-right: 0;
-  }
-  
-  .header {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 50px;
-    transition: 0.3s;
-  }
-  
-  .header {
-    color: white;
-    background: $accent-global-color;
-  }
-  
-  .header .navbarcontainer {
-      background-color: #0c0b09;
-      min-height: 60px;
-      padding: 10px 0px;
-      transition: 0.3s;
-      border-bottom: 1px solid white;
-  }
-  
-  .d-flex {
-      display: flex !important;
-  }
-  
-  .align-items-center {
-      align-items: center !important;
-  }
-  .justify-content-between {
-      justify-content: space-between !important;
-  }
-  .position-relative {
-      position: relative !important;
-  }
-  
-  .mymain .cta-btn {
-    color: rgb(14, 12, 12);
-    border: 2px solid green;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 50px;
-    transition: 0.3s;
-    flex-shrink: 0;
-  }
-  
-  
-  .mymain .cta-btn:first-child {
-    margin-right: 10px;
-  }
-  
-  .mymain {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97)),url('../img/mymain-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-  }
-  
-  
-  .content {
-    background-color: white; 
-    padding: 20px;
-  }
-  
-  .dark-background {
-    background-color: rgba(0, 0, 0, 0.6); 
-    color: white;
-  }
-  
+.mymain {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mymain .hero-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.mymain:before {
+  content: "";
+  background: color-mix(in srgb, white, transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.mymain .container {
+  position: relative;
+  z-index: 3;
+}
+
+.mymain h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.mymain h2 span {
+  color: black;
+}
+
+.mymain p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+.content {
+  background-color: white; 
+  padding: 20px;
+}
+
+.dark-background {
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+}
+
+section,
+.section {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #0c0b09;
+  padding: 60px 0;
+  scroll-margin-top: 77px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
   section,
   .section {
-    color: rgba(255, 255, 255, 0.7);
-    background-color: #0c0b09;
-    padding: 60px 0;
-    scroll-margin-top: 77px;
-    overflow: clip;
+    scroll-margin-top: 60px;
   }
-  
-  @media (max-width: 1199px) {
-  
-    section,
-    .section {
-      scroll-margin-top: 60px;
-    }
-  }
-  
-  .section-title {
-    padding-bottom: 60px;
-    position: relative;
-  }
-  
-  .section-title h2 {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0;
-    line-height: 1px;
-    margin: 0;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    position: relative;
-  }
-  
-  .section-title h2::after {
-    content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: $accent-global-color;
-    margin: 4px 10px;
-  }
-  
-  .section-title p {
-    color: $accent-global-color;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 600;
-    font-family: "Playfair Display",  sans-serif;
-  }
-  
-  
-  .mymain {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding: 80px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .mymain .hero-img {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  
-  .mymain:before {
-    content: "";
-    background: color-mix(in srgb, white, transparent 50%);
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-  }
-  
-  .mymain .container {
-    position: relative;
-    z-index: 3;
-  }
-  
-  .mymain h2 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-  }
-  
-  .mymain h2 span {
-    color: black;
-  }
-  
-  .mymain p {
-    margin: 10px 0 0 0;
-    font-size: 24px;
-  }
-  
-  /*
-  
-    Data Section
-  
-  */
+}
+
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: $accent-global-color;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  color: $accent-global-color;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Playfair Display",  sans-serif;
+}
+
+
+
+/*
+
+  Data Section
+
+*/
   
 .data-item.wide, .data.wide {
     width: 50%;
@@ -297,3 +294,23 @@ body {
     margin: 0 auto;           
     width: 100%;    
 }
+
+/*
+*  entire html
+*/
+
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-between {
+    justify-content: space-between !important;
+}
+.position-relative {
+    position: relative !important;
+}
+  
