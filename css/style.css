@@ -49,6 +49,15 @@ h6 {
   margin-right: 0;
 }
 
+@media (max-width: 320px) {
+  .navbarcontainer {
+    flex-direction: column;
+  }
+  .navmenu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /*
 *  Header
 *  
