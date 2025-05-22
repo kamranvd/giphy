@@ -289,11 +289,13 @@ section,
     min-height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 1px solid red;
   }
   .navbarcontainer > .mysitebrandname {
     display: block;
     text-align: center;
     margin-bottom: 10px;
+    border: 1px solid 0;
   }
   .navbarcontainer > .container {
     flex-direction: column !important;
@@ -306,6 +308,7 @@ section,
     align-items: center !important;
     width: 100%;
     margin-top: 15px;
+    border: 1px solid blue;
   }
   .navmenu ul {
     flex-direction: column !important;
