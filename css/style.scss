@@ -203,7 +203,7 @@ section,
 .section {
   color: rgba(255, 255, 255, 0.7);
   background-color: #0c0b09;
-  padding: 60px 0;
+  padding: 80px 0;
   scroll-margin-top: 77px;
   overflow: clip;
 }
@@ -246,7 +246,7 @@ section,
   margin: 0;
   font-size: 36px;
   font-weight: 600;
-  font-family: "Playfair Display",  sans-serif;
+  font-family: $heading-font;
 }
 
 
